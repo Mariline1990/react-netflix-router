@@ -8,7 +8,7 @@ const MovieDetails = () => {
           <Card className="bg-black text-center">
             <Card.Img
               variant="top"
-              src={}
+              src={this.props.film.Poster}
               style={{
                 width: "100%",
                 height: "600px",
@@ -16,8 +16,8 @@ const MovieDetails = () => {
               }}
             />
             <Card.Body>
-              <Card.Title className=" fw-bold fs-1">{}</Card.Title>
-              <Card.Text>{}</Card.Text>
+              <Card.Title className=" fw-bold fs-1">{this.props.film.Title}</Card.Title>
+
               <Button variant="outline-light">Watch Now</Button>
             </Card.Body>
           </Card>
